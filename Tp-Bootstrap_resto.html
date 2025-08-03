@@ -1,123 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Bouche B</title>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Restaurant Bouche B</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    crossorigin="anonymous" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous">
-  </head>
-  <body>
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+/>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+</head>
+<body class="m-0">
 
-    <!-- header section  -->
-    <nav class="navbar navbar-expand-lg bg-warning">
-      <div class="container-fluid">
-        <a class="navbar-brand text-secondary" href="#">Bouche B Resto</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-            </li>
-             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Menu
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else
-                    here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">À propos de nous</a>
-            </li>
-           
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Contact</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search"
-              aria-label="Search" />
-            <button class="btn btn-outline-success"
-              type="submit">Search</button>
-          </form>
+  <!-- 1.Navbar -->
+  <nav class="navbar navbar-expand-lg bg-warning">
+    <div class="container-fluid">
+      <a class="navbar-brand text-secondary" href="#">Bouche B Resto</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-wrap">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Menu
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">À propos de nous</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex mt-3 mt-lg-0" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2.Section Héros -->
+  <section
+    class="text-white text-center d-flex align-items-center justify-content-center vh-100 bg-dark bg-opacity-75 position-relative overflow-hidden"
+  >
+    <div class="position-absolute top-0 start-0 w-100 h-100 overflow-hidden">
+      <img
+        src="./assets/section-hero-im.png"
+        class="img-fluid w-100 h-100"
+        alt="Plat délicieux"
+      />
+    </div>
+    <div class="position-relative z-1 p-5 bg-dark bg-opacity-50 rounded">
+      <h1 class="display-4 fw-bold">Découvrez nos plats savoureux</h1>
+      <a href="#menu" class="btn btn-warning btn-lg mt-4">Voir le menu</a>
+    </div>
+  </section>
+
+  <!-- 3.Section Menu -->
+  <div class="container my-5" id="menu">
+  <h2 class="text-center mb-4">Notre Menu</h2>
+  <div class="row g-4">
+
+    <div class="col-12 col-md-4">
+      <div class="card h-100">
+        <div class="ratio ratio-4x3">
+          <img src="https://source.unsplash.com/400x300/?african-food"
+               class="img-fluid object-fit-cover" alt="Plat 1">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Poulet Yassa</h5>
+          <p class="card-text">Poulet mariné aux oignons et citron vert.</p>
+          <p class="fw-bold text-end text-success">5 500 FCFA</p>
         </div>
       </div>
-    </nav>
+    </div>
 
-    <!-- menu -->
-    <div class="dropdown-menu p-4 text-body-secondary"
-      style="max-width: 200px;">
+    <div class="col-12 col-md-4">
+      <div class="card h-100">
+        <div class="ratio ratio-4x3">
+          <img src="/assets/1.jpg"
+               class="img-fluid object-fit-cover" alt="Plat 2">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Couscous Royal</h5>
+          <p class="card-text">Semoule, légumes, merguez et poulet rôti.</p>
+          <p class="fw-bold text-end text-success">6 000 FCFA</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card h-100">
+        <div class="ratio ratio-4x3">
+          <img src="/assets/2.jpg"
+               class="img-fluid object-fit-cover" alt="Plat 3">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Mafé de Boeuf</h5>
+          <p class="card-text">Riz parfumé avec sauce arachide et viande tendre.</p>
+          <p class="fw-bold text-end text-success">5 000 FCFA</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <!-- 4.Section À propos de nous -->
+  <div class="container my-5">
+  <div class="row align-items-center">
+ 
+    <div class="col-md-6 mb-4 mb-md-0">
+      <div class="ratio ratio-1x1">
+          <img src="/assets/apropos.jpg"
+               class="img-fluid object-fit-cover" alt="Plat 3">
+        </div>
+    </div>
+
+     
+    <div class="col-md-6">
+      <h2>À propos de Bouche B Resto</h2>
       <p>
-        Some example text that’s free-flowing within the dropdown menu.
-      </p>
-      <p class="mb-0">
-        And this is more example text.
+        .....
       </p>
     </div>
+  </div>
+</div>
 
-    <!-- about -->
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title
-          and make up the bulk of the card’s content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
+
+  <!-- 5.Section Contact -->
+  <section class="container my-5" id="contact">
+  <h2 class="text-center mb-4">Contactez-nous</h2>
+  <form>
+    <div class="mb-3">
+      <label for="name" class="form-label">Nom</label>
+      <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
     </div>
 
-    <!-- contact -->
-    <form class="row row-cols-lg-auto g-3 align-items-center">
-      <div class="col-12">
-        <label class="visually-hidden"
-          for="inlineFormInputGroupUsername">Username</label>
-        <div class="input-group">
-          <div class="input-group-text">@</div>
-          <input type="text" class="form-control"
-            id="inlineFormInputGroupUsername" placeholder="Username">
-        </div>
-      </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">E-mail</label>
+      <input type="email" class="form-control" id="email" placeholder="Votre adresse e-mail" required>
+    </div>
 
-      <div class="col-12">
-        <label class="visually-hidden"
-          for="inlineFormSelectPref">Preference</label>
-        <select class="form-select" id="inlineFormSelectPref">
-          <option selected>Choose...</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
-      </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" rows="5" placeholder="Votre message" required></textarea>
+    </div>
 
-      <div class="col-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="inlineFormCheck">
-          <label class="form-check-label" for="inlineFormCheck">
-            Remember me
-          </label>
-        </div>
-      </div>
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+  </form>
+</section>
 
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
-    </form>
 
-    <!-- footer -->
-    <div></div>
-  </body>
+ <!-- 6.Pied de page -->
+  <footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p class="mb-2">&copy; 2025 Bouche B Resto - Tous droits réservés</p>
+    <div>
+      <a href="#" class="text-white mx-2 fs-4  text-decoration-none" aria-label="Facebook">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="#" class="text-white mx-2 fs-4  text-decoration-none" aria-label="Twitter">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="#" class="text-white mx-2 fs-4 text-decoration-none" aria-label="Instagram">
+        <i class="bi bi-instagram"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+</body>
 </html>
