@@ -19,7 +19,7 @@
 <body class="m-0">
 
   <!-- 1.Navbar -->
-  <nav class="navbar navbar-expand-lg bg-warning">
+  <nav class="navbar navbar-expand-lg fixed-top bg-warning">
     <div class="container-fluid">
       <a class="navbar-brand text-secondary" href="#">Bouche B Resto</a>
       <button
@@ -40,37 +40,24 @@
           </li>
           <li class="nav-item dropdown">
             <a
-              class="nav-link dropdown-toggle"
-              href="#"
+              class="nav-link "
+              href="#menu"
               role="button"
-              data-bs-toggle="dropdown"
+              
               aria-expanded="false"
             >
               Menu
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+            
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">À propos de nous</a>
+            <a class="nav-link" href="#apropos">À propos de nous</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Contact</a>
+            <a class="nav-link "  href="#contact" aria-disabled="true">Contact</a>
           </li>
         </ul>
-        <form class="d-flex mt-3 mt-lg-0" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        
       </div>
     </div>
   </nav>
@@ -94,7 +81,7 @@
 
   <!-- 3.Section Menu -->
   <div class="container my-5" id="menu">
-  <h2 class="text-center mb-4">Notre Menu</h2>
+  <h2   class="text-center mb-4">Notre Menu</h2>
   <div class="row g-4">
 
     <div class="col-12 col-md-4">
@@ -104,10 +91,11 @@
                class="img-fluid object-fit-cover" alt="Plat 1">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Poulet Yassa</h5>
-          <p class="card-text">Poulet mariné aux oignons et citron vert.</p>
-          <p class="fw-bold text-end text-success">5 500 FCFA</p>
+          <h5 class="card-title">Recette speciale</h5>
+          <p class="card-text"></p>
+          <p class="fw-bold text-end text-success">2 000 000 FCFA</p>
         </div>
+        <button type="button" class="btn btn-warning">En savoir plus</button>
       </div>
     </div>
 
@@ -115,13 +103,14 @@
       <div class="card h-100">
         <div class="ratio ratio-4x3">
           <img src="/assets/1.jpg"
-               class="img-fluid object-fit-cover" alt="Plat 2">
+               class="img-fluid object-fit-cover" alt="">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Couscous Royal</h5>
-          <p class="card-text">Semoule, légumes, merguez et poulet rôti.</p>
+          <h5 class="card-title">Big Burger Classique</h5>
+          <p class="card-text">Pain brioché, steak de bœuf , salade, tomate, oignons, sauce </p>
           <p class="fw-bold text-end text-success">6 000 FCFA</p>
         </div>
+        <button type="button" class="btn btn-warning">En savoir plus</button>
       </div>
     </div>
 
@@ -129,13 +118,14 @@
       <div class="card h-100">
         <div class="ratio ratio-4x3">
           <img src="/assets/2.jpg"
-               class="img-fluid object-fit-cover" alt="Plat 3">
+               class="img-fluid object-fit-cover" alt="">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Mafé de Boeuf</h5>
-          <p class="card-text">Riz parfumé avec sauce arachide et viande tendre.</p>
-          <p class="fw-bold text-end text-success">5 000 FCFA</p>
+          <h5 class="card-title">Recette speciale</h5>
+          <p class="card-text">Big Burger + Aloco</p>
+          <p class="fw-bold text-end text-success">2 000 FCFA</p>
         </div>
+        <button type="button" class="btn btn-warning">En savoir plus</button>
       </div>
     </div>
 
@@ -143,13 +133,13 @@
 </div>
 
   <!-- 4.Section À propos de nous -->
-  <div class="container my-5">
+  <div id="apropos"  class="container my-5">
   <div class="row align-items-center">
  
     <div class="col-md-6 mb-4 mb-md-0">
       <div class="ratio ratio-1x1">
           <img src="/assets/apropos.jpg"
-               class="img-fluid object-fit-cover" alt="Plat 3">
+               class="img-fluid object-fit-cover" alt="">
         </div>
     </div>
 
@@ -157,7 +147,7 @@
     <div class="col-md-6">
       <h2>À propos de Bouche B Resto</h2>
       <p>
-        .....
+        Bouche B Resto est bien plus qu’un simple restaurant , c’est une expérience . Fondé avec passion par des amoureux de la gastronomie, Bouche B allie créativité, tradition africaine et influences internationales pour offrir une cuisine qui éveille les sens.
       </p>
     </div>
   </div>
@@ -170,17 +160,17 @@
   <form>
     <div class="mb-3">
       <label for="name" class="form-label">Nom</label>
-      <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+      <input type="text" class="form-control"   placeholder="Votre nom" required>
     </div>
 
     <div class="mb-3">
       <label for="email" class="form-label">E-mail</label>
-      <input type="email" class="form-control" id="email" placeholder="Votre adresse e-mail" required>
+      <input type="email" class="form-control"  placeholder="Votre adresse e-mail" required>
     </div>
 
     <div class="mb-3">
       <label for="message" class="form-label">Message</label>
-      <textarea class="form-control" id="message" rows="5" placeholder="Votre message" required></textarea>
+      <textarea class="form-control"  rows="5" placeholder="Votre message" required></textarea>
     </div>
 
     <button type="submit" class="btn btn-primary">Envoyer</button>
